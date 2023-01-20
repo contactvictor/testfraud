@@ -12,6 +12,7 @@ from flask import jsonify, make_response
 from flask import json
 import json
 import os
+os.environ['MPLCONFIGDIR'] = '/tmp'
 import webbrowser
 from datetime import datetime, timedelta
 from datetime import datetime
