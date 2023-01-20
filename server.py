@@ -56,7 +56,7 @@ community_id = ""
 
 def connection(graph):
     #for azure server
-    conn = tg.TigerGraphConnection(host="http://10.2.0.20",graphname=graph,username="tigergraph",password="tigergraph") 
+    conn = tg.TigerGraphConnection(host="http://172.21.201.143",graphname=graph,username="tigergraph",password="tigergraph") 
     secret = conn.createSecret()
     conn.getToken(secret, "1000000")
     return conn
@@ -1084,7 +1084,7 @@ def dashboard_history():
 if __name__ == '__main__':
     #app.run(host="0.0.0.0", port=3000, threaded=True) 
     #app.run(host=os.getenv('LISTEN', '0.0.0.0'), port=int(os.getenv('PORT', '443')))
-    app.run(host=os.getenv('LISTEN', '0.0.0.0'), port=int(os.getenv('PORT', '8888')))
-    # app.run(host=os.getenv('LISTEN', '0.0.0.0'), port=int(os.getenv('PORT', '14240')))
+    #app.run(host=os.getenv('LISTEN', '0.0.0.0'), port=int(os.getenv('PORT', '8888')))
+     app.run(host=os.getenv('LISTEN', '0.0.0.0'), port=int(os.getenv('PORT', '14240')))
 
 
