@@ -25,6 +25,8 @@ from sklearn import preprocessing
 from sklearn.ensemble import IsolationForest
 from sklearn.svm import OneClassSVM
 from sklearn.decomposition import PCA
+import os
+os.environ['MPLCONFIGDIR'] = '/tmp'
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve
 from sklearn.metrics import f1_score
