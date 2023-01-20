@@ -1,3 +1,5 @@
+import os
+os.environ['MPLCONFIGDIR'] = '/tmp/'
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 import json
