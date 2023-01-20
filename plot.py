@@ -1,5 +1,3 @@
-import os 
-os.environ['MPLCONFIGDIR'] = os.getcwd() + "/configs/"
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 import json
