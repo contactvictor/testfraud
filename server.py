@@ -57,7 +57,7 @@ community_id = ""
 
 def connection(graph):
     #for azure server
-    conn = tg.TigerGraphConnection(host="http://172.21.201.143",graphname=graph,username="tigergraph",password="tigergraph") 
+    conn = tg.TigerGraphConnection(host="http://172.21.210.170",graphname=graph,username="tigergraph",password="tigergraph") 
     secret = conn.createSecret()
     conn.getToken(secret, "1000000")
     return conn
