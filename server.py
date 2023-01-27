@@ -68,6 +68,7 @@ def all_alerts_df(graph):
     df1=pd.json_normalize(alertsList, record_path =['open_alerts_with_type'], max_level=0)['attributes'].apply(pd.Series)
     return df1
 
+show_conn= connection("Alerts")
 
 
 @app.route('/')
