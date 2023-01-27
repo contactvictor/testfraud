@@ -69,12 +69,19 @@ def all_alerts_df(graph):
     return df1
 
 
-show_conn= connection("Alerts")
-conn = connection("TX_CRD")
-louv_conn = connection('louvien')
-cosine_conn = connection("Coisine_Final")
-model_performance_conn = connection("model_performance")
-print("connection are done")
+
+@app.route('/')
+@app.route("/Main")
+@app.route("/Prediction")  
+@app.route('/DataModel')
+@app.route("/Assess")
+
+
+@app.route('/')
+@cross_origin()
+def index():
+    return render_template('index.html')
+
 
 
 # get the data for the requested query
