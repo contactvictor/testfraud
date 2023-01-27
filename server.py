@@ -68,6 +68,15 @@ def all_alerts_df(graph):
     df1=pd.json_normalize(alertsList, record_path =['open_alerts_with_type'], max_level=0)['attributes'].apply(pd.Series)
     return df1
 
+
+show_conn= connection("Alerts")
+conn = connection("TX_CRD")
+louv_conn = connection('louvien')
+cosine_conn = connection("Coisine_Final")
+model_performance_conn = connection("model_performance")
+print("connection are done")
+
+
 # get the data for the requested query
 if __name__ == '__main__':
     #app.run(host="0.0.0.0", port=3000, threaded=True) 
