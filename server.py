@@ -62,6 +62,12 @@ def connection(graph):
     conn.getToken(secret, "1000000")
     return conn
 
+def all_alerts_df(graph):
+    conn = connection(graph)
+    alertsList = conn.runInstalledQuery("all_alerts")
+    df1=pd.json_normalize(alertsList, record_path =['open_alerts_with_type'], max_level=0)['attributes'].apply(pd.Series)
+    return df1
+
 # get the data for the requested query
 if __name__ == '__main__':
     #app.run(host="0.0.0.0", port=3000, threaded=True) 
