@@ -85,35 +85,6 @@ def index():
     return render_template('index.html')
 
 
-@app.route("/Main_Page", methods=['GET', 'POST'])
-@cross_origin()
-def Main_Page():
-    print("sent_data1")
-
-@app.route("/All_alerts_download", methods=['GET', 'POST'])
-@cross_origin()
-def All_alerts_download():
-    print("sent_data2")
-     
-@app.route('/Main_service', methods=['GET','POST'])
-def Main_service():
-    print("sent_data3")
-
-@app.route("/Assessment_Page", methods=['GET','POST'])   
-def Assessment_Page():
-    print("sent_data4")
-
-@app.route("/Assessment_Service", methods=['GET','POST'])  
-def Assessment_Service():
-
-	print("sent_data5")
-    
-
-@app.route("/model_Rulebased", methods=['GET','POST'])
-@cross_origin(supports_credentials=True)
-
-def model_Rulebased():
-	print("sent_data6")
 
 # get the data for the requested query
 if __name__ == '__main__':
