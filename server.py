@@ -69,7 +69,7 @@ def all_alerts_df(graph):
     return df1
 
 conn = connection("TX_CRD")
-
+print("connection are done")
 
 @app.route('/')
 @app.route("/Main")
@@ -83,15 +83,7 @@ conn = connection("TX_CRD")
 def index():
     return render_template('index.html')
 
-
-@app.route("/Main_Page", methods=['GET', 'POST'])
-@cross_origin()
-def Main_Page():
-    sent_data = request.get_json()
-    print(sent_data)
-    # show_conn= connection("Alerts")
-    #Action1= sent_data['Datamodel']
-
+https://github.com/contactvictor/testfraud.git
 # get the data for the requested query
 if __name__ == '__main__':
     #app.run(host="0.0.0.0", port=3000, threaded=True) 
