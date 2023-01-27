@@ -83,6 +83,13 @@ def index():
     return render_template('index.html')
 
 
+@app.route("/Main_Page", methods=['GET', 'POST'])
+@cross_origin()
+def Main_Page():
+    sent_data = request.get_json()
+    print(sent_data)
+    # show_conn= connection("Alerts")
+    #Action1= sent_data['Datamodel']
 
 # get the data for the requested query
 if __name__ == '__main__':
