@@ -3,4 +3,8 @@ WORKDIR /app
 COPY ./requirements.txt /app/
 RUN pip install -r requirements.txt
 COPY ./ /app/
-CMD ["python", "server.py"]
+#CMD ["python", "server.py"]
+EXPOSE 8888
+
+ENTRYPOINT ["python3"]
+CMD ["server.py"]
