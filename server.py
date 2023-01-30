@@ -72,19 +72,11 @@ conn = connection("TX_CRD")
 print("connection are done")
 
 
-@app.route('/')
-@app.route("/Main")
-@app.route("/Prediction")  
-@app.route('/DataModel')
-@app.route("/Assess")
 
-
-@app.route('/')
-@cross_origin()
-def index():
-    return render_template('index.html')
-
-
+@app.route('/')   # URL '/' to be handled by main() route handler
+def main():
+    """Say hello"""
+    return 'Hello, world!'
 
 # get the data for the requested query
 if __name__ == '__main__':
