@@ -81,8 +81,8 @@ def all_alerts_df(graph):
 
 #show_conn= connection("Alerts")
 conn = connection("TX_CRD")
-louv_conn = connection('louvien')
-cosine_conn = connection("Coisine_Final")
+#louv_conn = connection('louvien')
+#cosine_conn = connection("Coisine_Final")
 #model_performance_conn = connection("model_performance")
 print("connection are done")
 """
