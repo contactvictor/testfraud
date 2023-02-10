@@ -72,11 +72,11 @@ def connection(graph):
     conn.getToken(secret, "1000000")
     return conn
 
-show_conn= connection("Alerts")
-conn = connection("TX_CRD")
-louv_conn = connection('louvien')
-cosine_conn = connection("Coisine_Final")
-model_performance_conn = connection("model_performance")
+#show_conn= connection("Alerts")
+#conn = connection("TX_CRD")
+#louv_conn = connection('louvien')
+#cosine_conn = connection("Coisine_Final")
+#model_performance_conn = connection("model_performance")
 print("connection are done")
 """
 from flask import Flask  # From module flask import class Flask
